@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.nav-items {
+  list-style: none;
+}
