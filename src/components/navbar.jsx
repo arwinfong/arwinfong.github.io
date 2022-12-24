@@ -1,4 +1,4 @@
-import "../App.css"
+import "../index.css"
 
 function Navbar() {
     return (
@@ -7,7 +7,7 @@ function Navbar() {
             <ul className="navbar-items">
                 <li>About</li>
                 <li>Stuff</li>
-                <li>Coming Soon..</li>
+                <li>Coming</li>
             </ul>
         </nav>
     )

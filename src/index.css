@@ -1,11 +1,30 @@
 nav {
   display: flex;
-  background-color: aquamarine;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: baseline;
+  background-color: #181D31;
+  font-family: Helvetica, sans-serif;
   justify-content: space-between;
+  color: #E6DDC4;
+  padding: 8px;
 }
 
-.nav-items {
-  list-style: none;
+.navbar-items {
+  display: flex;
+  margin-right: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+.main {
+  margin: 37px;
+  max-width: 320px;
+  background-color: #181D31;
+  color: #E6DDC4;
+  font-family: Helvetica, sans-serif;
+  border-radius: 6px;
+}
+
+.main--img, .main--desc {
+  padding: 14px;
+}
+

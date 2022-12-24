@@ -1,11 +1,12 @@
 import './App.css'
 import Navbar from "./components/navbar.jsx"
+import Main from "./components/main.jsx"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
         <Navbar />
-        <h1>Hello</h1>
+        <Main />
     </div>
   )
 }
