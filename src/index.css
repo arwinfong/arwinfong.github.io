@@ -1,9 +1,12 @@
-nav {
+div {
+  font-family: Helvetica, sans-serif;
+  color: #F0E9D2;
+}
+
+.nav {
   display: flex;
   background-color: #181D31;
-  font-family: Helvetica, sans-serif;
   justify-content: space-between;
-  color: #E6DDC4;
   padding: 8px;
 }
 
@@ -15,16 +18,39 @@ nav {
   margin: 0;
 }
 
-.main {
-  margin: 37px;
-  max-width: 320px;
+.card {
+  margin: 23px;
   background-color: #181D31;
-  color: #E6DDC4;
-  font-family: Helvetica, sans-serif;
-  border-radius: 6px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
 }
 
-.main--img, .main--desc {
+.card--img {
   padding: 14px;
+  max-width: 230px;
 }
 
+.card--desc {
+  margin-bottom: 9px;
+  padding: 7px;
+}
+
+.donList {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.info {
+  margin: 23px;
+  color: #E6DDC4;
+}
+
+.info--text{
+  padding: 7px;
+  font-weight: bold;
+  border-radius: 9px;
+  background-color: #181D31;
+}
