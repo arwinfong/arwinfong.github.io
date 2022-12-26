@@ -1,6 +1,6 @@
 export default [
     {
-        img: "taikoHUH.png"
+        img: "taikoHUH.png",
     },
     {
         img: "donCHAMP.png"

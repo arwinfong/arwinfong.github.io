@@ -9,10 +9,10 @@ function App() {
     return <Card img={taiko.img} />
   })
   return (
-    <div className="app">
+    <div className=" text-[#F0E9D2] bg-[#678983] font-sans min-h-screen">
         <Navbar />
         <Info />
-        <section className='donList'>
+        <section className="overflow-x-auto flex flex-nowrap">
           {taikoElements}
         </section>
     </div>
