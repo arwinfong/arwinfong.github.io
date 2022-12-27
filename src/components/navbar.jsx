@@ -8,9 +8,9 @@ function Navbar() {
                 <h1 className="text-3xl font-bold">This is a navbar</h1>
             </div>
             <div className="flex items-center">
-                <p className="font-semibold m-2">About</p>
-                <p className="font-semibold m-2">Stuff</p>
-                <p className="font-semibold m-2">Coming</p>
+                <p className="font-semibold m-2 hover:text-[#ada898]">About</p>
+                <p className="font-semibold m-2 hover:text-[#ada898]">Stuff</p>
+                <p className="font-semibold m-2 hover:text-[#ada898]">Coming</p>
             </div>
         </div>
     )
