@@ -1,3 +1,17 @@
 @tailwind base;
+/* src: https://scottspence.com/posts/change-scrollbar-color-tailwind-css#tailwind-example */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #678983;
+}   
+
+*::-webkit-scrollbar-thumb {
+    background-color:#F0E9D2;
+    border-radius: 14px;
+}
+
 @tailwind components;
 @tailwind utilities;

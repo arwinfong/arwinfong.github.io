@@ -1,7 +1,7 @@
-import './App.css'
-import Navbar from "./components/navbar.jsx"
-import Info from "./components/info.jsx"
-import Card from "./components/card.jsx"
+import Navbar from "./components/Navbar.jsx"
+import Info from "./components/Info.jsx"
+import Card from "./components/Card.jsx"
+import Title from "./components/Title.jsx"
 import taikoData from "./data.js"
 
 function App() {
@@ -9,10 +9,15 @@ function App() {
     return <Card img={taiko.img} />
   })
   return (
-    <div className=" text-[#F0E9D2] bg-[#678983] font-sans min-h-screen">
+    <div className=" text-[#F0E9D2] font-sans min-h-screen bg-[#678983] ">
         <Navbar />
+        <Title/>
         <Info />
-        <section className="overflow-x-auto flex flex-nowrap">
+        <Info />
+        <Info />
+        <Info />
+        <Info />
+        <section className="flex overflow-y-auto">
           {taikoElements}
         </section>
     </div>
