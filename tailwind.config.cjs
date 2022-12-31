@@ -11,13 +11,14 @@ module.exports = {
     extend: {
       keyframes: {
         hide: {
-          '0%': { transform: 'translateY(-75px)'},
-          '50%': { transform: 'translateY(-70px)'}
+          '0%': { 
+            transform: 'translateY(-75px)'
+          },
         },
         underline: {
           '0%' : { 
             opacity: '0',
-            scale: '0%'
+            transform: 'scaleX(0%)'
           },
           '50%' : { 
             opacity: '1',
@@ -27,12 +28,23 @@ module.exports = {
             opacity: '1',
             transform: 'scaleX(100%)'
           }
+        },
+        textIn: {
+          '0%' : {
+            opacity: '0',
+            transform: 'translateX(1000px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0%)'
+          }
         }
       },
 
       animation: {
         hide: 'hide 1s ease-in-out',
         underline: 'underline 2s ease-in-out',
+        textIn: 'textIn 1.5s ease-in-out'
       }
     }
   },

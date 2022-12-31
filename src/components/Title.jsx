@@ -1,6 +1,6 @@
 import "../index.css"
 
-function Title(){
+export default function Title(){
     return(
         <div className="flex flex-col justify-center items-center p-6 min-h-screen">
             <h1 className="text-7xl font-bold">Welcome</h1>
@@ -9,5 +9,3 @@ function Title(){
         </div>
     )
 }
-
-export default Title

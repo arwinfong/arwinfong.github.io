@@ -1,27 +1,25 @@
 import Navbar from "./components/Navbar.jsx"
-import Info from "./components/Info.jsx"
+import About from "./components/About.jsx"
 import Card from "./components/Card.jsx"
 import Title from "./components/Title.jsx"
+import Footer from "./components/Footer.jsx"
 import taikoData from "./data.js"
 
-function App() {
+export default function App() {
   const taikoElements = taikoData.map(taiko => {
     return <Card img={taiko.img} />
   })
   return (
-    <div className=" text-[#F0E9D2] font-sans min-h-screen bg-[#678983] ">
+    <div className="text-[#F0E9D2] font-sans min-h-screen bg-[#678983] overflow-hidden">
         <Navbar />
         <Title/>
-        <Info />
-        <Info />
-        <Info />
-        <Info />
-        <Info />
-        <section className="flex overflow-y-auto">
-          {taikoElements}
+        <section className="min-h-screen">
+          <About />
         </section>
+        {/* <section className="flex overflow-y-auto">
+          {taikoElements}
+        </section> */}
+        <Footer />
     </div>
   )
 }
-
-export default App
