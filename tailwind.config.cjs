@@ -10,10 +10,15 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        hide: {
-          '0%': { 
-            transform: 'translateY(-75px)'
+        reveal: {
+          '0%': {
+            opacity: '0',
+            top: '80px'
           },
+          '100%': {
+            opacity: '1',
+            top: '0px'
+          }
         },
         underline: {
           '0%' : { 
@@ -38,13 +43,13 @@ module.exports = {
             opacity: '1',
             transform: 'translateX(0%)'
           }
-        }
+        },
       },
 
       animation: {
-        hide: 'hide 1s ease-in-out',
+        reveal: 'reveal 1s ease-in-out',
         underline: 'underline 2s ease-in-out',
-        textIn: 'textIn 1.5s ease-in-out'
+        textIn: 'textIn 1.5s ease-in-out',
       }
     }
   },
