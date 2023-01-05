@@ -20,8 +20,8 @@ export default function App() {
   })
 
   return (    
-    <div className="text-white font-display min-h-screen  bg-[url('images/rainbowbg-repeat.gif')] bg-repeat-y bg-center bg-contain">
-    <div className="bg-[url('images/rainbowbg.gif')] bg-no-repeat bg-bottom bg-contain">
+    <div className="text-white font-display min-h-screen bg-[url('images/rainbowbg-repeat.png')] bg-repeat-y bg-center bg-contain">
+    <div className="bg-[url('images/rainbowbg.png')] bg-no-repeat bg-bottom bg-contain">
         <Navbar />
         <Title/>
         <section className="min-h-screen">
