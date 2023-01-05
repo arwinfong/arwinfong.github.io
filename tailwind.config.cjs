@@ -44,12 +44,18 @@ module.exports = {
             transform: 'translateX(0%)'
           }
         },
+        tempOpac:{
+          '0%': { opacity: '1'},
+          '50%':{ opacity: '1'},
+          '100%':{ opacity: '0' }
+        }, 
       },
 
       animation: {
         reveal: 'reveal 1s ease-in-out',
         underline: 'underline 2s ease-in-out',
         textIn: 'textIn 1.5s ease-in-out',
+        tempOpac: 'tempOpac 2s',
       }
     }
   },

@@ -1,8 +1,25 @@
+import { useEffect, useState } from "react"
 import "../index.css"
 
 export default function Navbar() {
+    // Hide navbar src: https://codesandbox.io/s/vm96x615my
+    const [show, setShow] = useState(true)
+    const [yOffset, setYOffset] = useState(window.pageYOffset)
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    })
+
+    function handleScroll() {
+        const currentYOffset = window.pageYOffset
+        const show = yOffset > currentYOffset
+
+        setYOffset(currentYOffset)
+        setShow(show)
+    }
     return (
-        <div className="fixed m-auto top-0 left-0 w-full">
+        <div className={show ? "fixed m-auto top-0 left-0 w-full translate-y-0 duration-500 ease-in-out" : "fixed m-auto top-0 left-0 w-full -translate-y-full duration-500 ease-in-out"}>
             <div className="flex p-3 justify-between items shadow-xl">
                 <div className="flex items-center">
                     <h1 className="text-3xl font-bold">Arwin Fong</h1>

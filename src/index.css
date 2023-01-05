@@ -1,5 +1,5 @@
 @tailwind base;
-/* src: https://scottspence.com/posts/change-scrollbar-color-tailwind-css#tailwind-example */
+/*Custom scrollbar src: https://scottspence.com/posts/change-scrollbar-color-tailwind-css#tailwind-example */
 *::-webkit-scrollbar {
     width: 8px;
 }
