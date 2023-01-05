@@ -5,13 +5,21 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #678983;
+    background: black;
 }   
 
 *::-webkit-scrollbar-thumb {
-    background-color:#F0E9D2;
+    background-color: white;
     border-radius: 14px;
 }
 
 @tailwind components;
 @tailwind utilities;
+/*
+colors:
+    background: #678983
+    text: #F0E9D2
+    text-darker: #bfb9a6
+    text-darkest: #918c7d
+    obj-background: #181D31
+*/

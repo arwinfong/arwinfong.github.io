@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': 'Helvetica, Arial, sans-serif'
+      'display': 'Lato, sans-serif'
     },
     extend: {
       keyframes: {
@@ -44,7 +44,7 @@ module.exports = {
             transform: 'translateX(0%)'
           }
         },
-        tempOpac:{
+        tempOpac: {
           '0%': { opacity: '1'},
           '50%':{ opacity: '1'},
           '100%':{ opacity: '0' }
@@ -52,10 +52,10 @@ module.exports = {
       },
 
       animation: {
-        reveal: 'reveal 1s ease-in-out',
-        underline: 'underline 2s ease-in-out',
-        textIn: 'textIn 1.5s ease-in-out',
-        tempOpac: 'tempOpac 2s',
+        'reveal': 'reveal 1s ease-in-out',
+        'underline': 'underline 2s ease-in-out',
+        'textIn': 'textIn 1.5s ease-in-out',
+        'tempOpac': 'tempOpac 2s',
       }
     }
   },

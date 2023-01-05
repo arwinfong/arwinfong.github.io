@@ -24,12 +24,3 @@ export default [
         lang: ['donuts']
     },
 ]
-
-/*
-colors:
-    background: #678983
-    text: #F0E9D2
-    text-darker: #bfb9a6
-    text-darkest: #918c7d
-    obj-background: #181D31
-*/
