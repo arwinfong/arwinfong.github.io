@@ -3,7 +3,7 @@ import "../index.css"
 
 export default function Navbar() {
     // Hide navbar src: https://codesandbox.io/s/vm96x615my
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const [yOffset, setYOffset] = useState(window.pageYOffset)
 
     useEffect(() => {
@@ -28,11 +28,8 @@ export default function Navbar() {
                     <a href="#about">
                         <li className="font-semibold text-xl m-2 hover:text-[#ada898]">ABOUT</li>   
                     </a>
-                    <a>
-                        <li className="font-semibold text-xl m-2 hover:text-[#ada898]">STUFF</li>   
-                    </a>
-                    <a>
-                        <li className="font-semibold text-xl m-2 hover:text-[#ada898]">WORDS</li>   
+                    <a href="#projects">
+                        <li className="font-semibold text-xl m-2 hover:text-[#ada898]">PROJECTS</li>   
                     </a>
                 </ul>
             </div>
