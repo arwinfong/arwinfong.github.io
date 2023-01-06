@@ -47,7 +47,7 @@ module.exports = {
         tempOpac: {
           '0%': { opacity: '1'},
           '50%':{ opacity: '1'},
-          '100%':{ opacity: '0' }
+          '51%':{ opacity: '0' }
         }, 
       },
 
