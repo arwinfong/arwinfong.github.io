@@ -9,12 +9,10 @@ import { useEffect, useState } from "react"
 import "./index.css"
 
 export default function App() {
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
   const [end, setEnd] = useState(true)
   const [loading, setLoading] = useState(true)
 
+  // Loading screen src: https://betterprogramming.pub/a-quick-and-easy-react-js-loading-screen-with-hooks-940feccd553f
   useEffect(() => {
     setTimeout(() => setLoading(false), 1200)
   }, [])
@@ -37,23 +35,27 @@ export default function App() {
               desc={project.desc}
               tech={project.tech}
               lang={project.lang}
+              repo={project.repo}
            />
   })
 
   return (    
-      <div className={end ? "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-top bg-fixed overflow-hidden" : "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-bottom overflow-hidden" }>
-        <section className={loading ? "opacity-100" : "opacity-0"}>
-          <Loading />
-        </section>
+    <>
+    {loading == false ? (<div className={end ? "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-top bg-fixed overflow-hidden" : "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-[center_bottom_11rem] overflow-hidden" }>
         <Navbar />
         <Title/>
         <section className="min-h-screen" id="about">
           <About />
         </section>
-        <section className="flex justify-center items-center flex-wrap basis-[600px] min-h-screen" id="projects">
+        <section className="flex justify-center items-center flex-col min-h-screen m-3 p-5" id="projects">
+          <h1 className="text-7xl font-400 p-1">Projects</h1>
           {projectElements}
         </section>
         <Footer />
       </div>
+    ) : (
+      <Loading />
+    )}
+    </>
   )
 }

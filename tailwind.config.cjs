@@ -34,16 +34,6 @@ module.exports = {
             transform: 'scaleX(100%)'
           }
         },
-        textIn: {
-          '0%' : {
-            opacity: '0',
-            transform: 'translateX(1000px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0%)'
-          }
-        },
         tempOpac: {
           '0%': { opacity: '1'},
           '50%':{ opacity: '1'},

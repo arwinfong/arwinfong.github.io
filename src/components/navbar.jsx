@@ -31,6 +31,9 @@ export default function Navbar() {
                     <a href="#projects">
                         <li className="font-semibold text-xl m-2 hover:text-[#ada898]">PROJECTS</li>   
                     </a>
+                    <a href="#contact">
+                        <li className="font-semibold text-xl m-2 hover:text-[#ada898]">CONTACT</li>   
+                    </a>
                 </ul>
             </div>
         </div>
