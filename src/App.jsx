@@ -41,7 +41,7 @@ export default function App() {
 
   return (    
     <>
-    {loading === false ? (<div className={end ? "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-top bg-fixed bg-cover overflow-hidden" : "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-[center_bottom_11rem] bg-contain"}>
+    {loading === false ? (<div className={end ? "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] small:bg-y-repeat big:bg-no-repeat bg-center bg-fixed bg-contain overflow-hidden" : "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] small:bg-y-repeat big:bg-no-repeat bg-[center_bottom_11rem] bg-contain"}>
         <Navbar />
         <Title/>
         <section className="min-h-screen" id="about">
