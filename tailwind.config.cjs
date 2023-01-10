@@ -8,6 +8,10 @@ module.exports = {
     fontFamily: {
       'display': 'Lato, sans-serif'
     },
+    screens: {
+      'small': {'max': '1023px'},
+      'big': {'min': '1024px'}
+    },
     extend: {
       keyframes: {
         reveal: {

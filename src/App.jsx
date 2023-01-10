@@ -24,7 +24,7 @@ export default function App() {
 
   function handleScroll() {
       const currentY = window.pageYOffset
-      const end = 1600 > currentY
+      const end = (document.documentElement.scrollHeight - document.documentElement.clientHeight - ((screen.width - 1024) / 5 + 370)) > currentY
 
       setEnd(end)
   }
@@ -41,7 +41,7 @@ export default function App() {
 
   return (    
     <>
-    {loading == false ? (<div className={end ? "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-top bg-fixed overflow-hidden" : "text-white font-display h-full w-full bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-[center_bottom_11rem] overflow-hidden" }>
+    {loading === false ? (<div className={end ? "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-top bg-fixed bg-cover overflow-hidden" : "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] bg-no-repeat bg-[center_bottom_11rem] bg-contain"}>
         <Navbar />
         <Title/>
         <section className="min-h-screen" id="about">

@@ -9,7 +9,7 @@ export default function Card(props){
             <p className="font-700 text-[#bebdb8]">{props.desc}</p>
             <h3 className="font-400 text-sm text-[#918c7d]"><b>Tools:</b> {techElements}</h3>
             <h3 className="font-400 text-sm text-[#918c7d]"><b>Languages:</b> {langElements}</h3>
-            {props.repo === '' ? (<></>) : (<p className="font-700 text-[#918c7d]">Github Repository: <a className="hover:text-[#4e4c43]" href={props.repo}> {props.repo} </a> </p>)}
+            {props.repo === '' ? (<></>) : (<a href={props.repo}><img src="images/github.png" className="w-12"/></a>)}
         </div>
     )
 }
