@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar.jsx"
-import About from "./components/About.jsx"
+import About from "./sections/About.jsx"
 import Card from "./components/Card.jsx"
 import Title from "./components/Title.jsx"
-import Footer from "./components/Footer.jsx"
+import Footer from "./sections/Footer.jsx"
 import Loading from "./components/Loading.jsx"
 import Data from "./data.js"
 import { useEffect, useState } from "react"
@@ -14,15 +14,17 @@ export default function App() {
 
   // Loading screen src: https://betterprogramming.pub/a-quick-and-easy-react-js-loading-screen-with-hooks-940feccd553f
   useEffect(() => {
+    document.body.style.overflow = "hidden"
     setTimeout(() => setLoading(false), 1200)
+    setTimeout(() => document.body.style.overflow = "auto", 3000)
   }, [])
 
   useEffect(() => {
-      window.addEventListener("scroll", handleScroll)
-      return () => window.removeEventListener("scroll", handleScroll)
+      window.addEventListener("scroll", handleBg)
+      return () => window.removeEventListener("scroll", handleBg)
   })
 
-  function handleScroll() {
+  function handleBg() {
       const currentY = window.pageYOffset
       const end = (document.documentElement.scrollHeight - document.documentElement.clientHeight - ((screen.width - 1024) / 5 + 370)) > currentY
 
