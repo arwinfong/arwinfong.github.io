@@ -6,7 +6,7 @@ export default function About(){
             <div>
                 <h1 className="text-7xl font-400 p-1">About Me</h1>
                 <p className="border-2 border-[#979797] bg-black table p-3 font-medium max-w-20">
-                    Hello! I am a second year at University of Toronto in Computer Science. During my spare time, I like to code (when it works), playing videos games and listening 
+                    Hello! I am a 3rd year at University of Toronto in Computer Science. During my spare time, I like to code (when it works), playing videos games and listening 
                     to music. Feel free to send me a message about work or anything!
                 </p>
             </div>
