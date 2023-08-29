@@ -1,9 +1,9 @@
-import Navbar from "./src/components/Navbar.jsx"
-import About from "./src/sections/About.jsx"
-import Card from "./src/components/Card.jsx"
-import Title from "./src/components/Title.jsx"
-import Footer from "./src/sections/Footer.jsx"
-import Loading from "./src/components/Loading.jsx"
+import Navbar from "src/components/navbar"
+import About from "src/sections/About"
+import Card from "src/components/card"
+import Title from "src/sections/Title"
+import Footer from "src/sections/Footer"
+import Loading from "src/components/Loading"
 import Data from "./data.js"
 import { useEffect, useState } from "react"
 import "./index.css"
@@ -44,7 +44,7 @@ export default function App() {
   return (    
     <>
     {loading === false ? (<div className={end ? "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] small:bg-y-repeat big:bg-no-repeat bg-top bg-fixed big:bg-cover small:bg-contain overflow-hidden" : "text-white font-display h-full w-full small:bg-[url('./assets/background/smallbg.gif')] big:bg-[url('./assets/background/rainbowbg.gif')] small:bg-y-repeat big:bg-no-repeat bg-[center_bottom_11rem] bg-contain"}>
-        <Navbar />
+        <Navbar/>
         <Title/>
         <section className="min-h-screen" id="about">
           <About />
